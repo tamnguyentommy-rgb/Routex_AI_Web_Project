@@ -1,0 +1,16 @@
+
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 401ms
+
+ GET / [32m200[39m in 855ms[2m (next.js: 646ms, application-code: 209ms)[22m
+ GET /onboarding/subject [32m200[39m in 90ms[2m (next.js: 48ms, application-code: 42ms)[22m
+ GET /onboarding/config [32m200[39m in 2.3s[2m (next.js: 2.2s, application-code: 71ms)[22m
+ GET /onboarding/exam-date [32m200[39m in 326ms[2m (next.js: 304ms, application-code: 23ms)[22m
+ GET /test [32m200[39m in 402ms[2m (next.js: 357ms, application-code: 44ms)[22m
+ GET /results [32m200[39m in 826ms[2m (next.js: 803ms, application-code: 23ms)[22m
+ GET /roadmap?id=92 [32m200[39m in 372ms[2m (next.js: 349ms, application-code: 23ms)[22m

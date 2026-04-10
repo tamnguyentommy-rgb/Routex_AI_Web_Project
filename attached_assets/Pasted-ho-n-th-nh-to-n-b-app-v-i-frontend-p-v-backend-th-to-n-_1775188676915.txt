@@ -1,0 +1,177 @@
+hoàn thành toàn bộ app, với frontend đẹp, và backend , thì toàn bộ flow như sau
+project của t như này
+- một cái lộ trình học, chia ra 2 mode, cùng dashboard và progress weekly update
+mode exam thì chỉ cần biết đề thi sẽ ra topic gì, sau đó cho mini test, nếu nó yếu phần đó thì học những phần đó
+còn nếu general study thì tạo lộ trình học dựa trên mục tiêu
+input là : username, password (cái này phần signup/login), subject(1 trong 4 môn toán, lý, hoá, sinh), lớp (10 -> 12), MODE (general, hoặc exam)
+đó là dữ liệu cứng user nhập ở input khi mới vào giao diện web (mỗi câu hỏi là 1 trang khác nhau nha, sẽ tự động chuyển trang
+database câu hỏi, tạo thành mini test và sau khi làm xong, mình sẽ có data vè những topic mà user còn yéu để học
+có thể dùng, tích hợp LLm vào để break down topic thành các subtopic đồng thời đưa ra lời khuyên chi tiết hơn và cá nhân ho
+# 1. DATABASE SCHEMA (CHẠY HỆ THỐNG)
+## (A) User
+```sql
+users(
+user_id PK,
+username,
+password_hash,
+grade
+)
+```
+---
+## (B) Learning Config
+```sql
+learning_configs(
+config_id PK,
+user_id FK,
+subject,
+mode, -- exam / general
+target_score,
+daily_study_time,
+deadline
+)
+```
+---
+## (C) Curriculum
+```sql
+topics(
+topic_id PK,
+subject,
+grade,
+topic_name,
+difficulty,
+importance
+)
+```
+---
+## (D) Prerequisite Graph
+```sql
+topic_prerequisites(
+topic_id FK,
+prerequisite_id FK
+)
+```
+---
+## (E) Question Bank
+```sql
+questions(
+question_id PK,
+topic_id FK,
+difficulty,
+question,
+option_a,
+option_b,
+option_c,
+option_d,
+correct_answer,
+explanation
+)
+```
+---
+## (F) User Mastery (CORE)
+```sql
+user_mastery(
+user_id FK,
+topic_id FK,
+mastery,
+last_updated,
+PK(user_id, topic_id)
+)
+```
+---
+## (G) Tests
+```sql
+tests(
+test_id PK,
+user_id FK,
+week,
+created_at
+)
+```
+---
+## (H) Test Questions
+```sql
+test_questions(
+test_id FK,
+question_id FK
+)
+```
+---
+## (I) User Answers
+```sql
+user_answers(
+test_id FK,
+question_id FK,
+selected_answer,
+is_correct
+)
+```
+---
+## (J) Weekly Progress
+```sql
+weekly_progress(
+user_id FK,
+week,
+study_time,
+score
+)
+```
+---
+## (K) Learning Path (khuyên dùng)
+```sql
+learning_paths(
+user_id,
+week,
+topic_id,
+status -- pending/done
+)
+```
+---
+# 2. RAW DATA (EVENT LEVEL – OPTIONAL NHƯNG TỐT)
+Dùng để generate dataset
+```sql
+study_sessions(
+session_id PK,
+user_id,
+topic_id,
+time_spent,
+score_before,
+score_after,
+created_at
+)
+```
+---
+# 3. ML DATASET (TRAINING DATA – QUAN TRỌNG NHẤT)
+## 🎯 1 row = 1 user tại tuần t
+---
+## FINAL SCHEMA:
+```text
+user_id (ignore khi train)
+week
+# --- STATE (tuần t-1) ---
+prev_mastery_avg
+prev_mastery_std
+prev_weak_topic_count
+prev_score
+# --- ACTION (tuần t) ---
+study_time_per_day
+total_weekly_time
+num_topics
+avg_topic_difficulty
+weak_topic_ratio
+prerequisite_depth
+# --- CONTEXT ---
+grade
+# --- HISTORY ---
+prev_week_time
+improvement_last_week
+# --- TARGET ---
+next_week_score
+```
+---
+# 4. FEATURE Ý NGHĨA GỌN
+## STATE (trạng thái)
+* user đang mạnh/yếu ở đâu
+## ACTION (hành động)
+* tuần này học gì + học bao nhiêu
+## TARGET
+* kết quả sau hành động

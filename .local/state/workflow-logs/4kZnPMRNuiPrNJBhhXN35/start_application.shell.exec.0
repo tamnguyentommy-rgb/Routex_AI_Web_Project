@@ -1,0 +1,75 @@
+[1G[0K⠙[1G[0K
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K⠙[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 944ms
+
+ GET / [32m200[39m in 2.8s[2m (next.js: 2.6s, application-code: 214ms)[22m
+ GET /onboarding/subject [32m200[39m in 53ms[2m (next.js: 24ms, application-code: 30ms)[22m
+ GET /onboarding/config [32m200[39m in 42ms[2m (next.js: 18ms, application-code: 24ms)[22m
+ GET /onboarding/config [32m200[39m in 19ms[2m (next.js: 3ms, application-code: 16ms)[22m
+ GET /onboarding/exam-date [32m200[39m in 43ms[2m (next.js: 19ms, application-code: 25ms)[22m
+ GET /test [32m200[39m in 43ms[2m (next.js: 24ms, application-code: 19ms)[22m
+[36m[browser][39m [31mUncaught TypeError: Cannot read properties of undefined (reading 'option_a')[39m
+[31m    at TestPage (app/test/page.tsx:131:61)[39m
+  [90m129 |[0m ...current];
+  [90m130 |[0m ... / test.questions.length) * [35m100[0m;
+[31m[1m>[0m [90m131 |[0m ...ng, string | [36mundefined[0m> = { [33mA[0m: q.option_a, [33mB[0m: q.option_b, [33mC[0m: q.opt...
+  [90m    |[0m                                     [31m[1m^[0m
+  [90m132 |[0m ...eys(answers).length;
+  [90m133 |[0m ...
+  [90m134 |[0m ...
+ GET /test? [32m200[39m in 44ms[2m (next.js: 3ms, application-code: 42ms)[22m
+ GET /onboarding/config? [32m200[39m in 50ms[2m (next.js: 2ms, application-code: 47ms)[22m
+ GET /dashboard [32m200[39m in 1062ms[2m (next.js: 1040ms, application-code: 22ms)[22m
+ GET /dashboard [32m200[39m in 31ms[2m (next.js: 6ms, application-code: 25ms)[22m
+ GET /dashboard [32m200[39m in 22ms[2m (next.js: 3ms, application-code: 19ms)[22m
+ GET /test [32m200[39m in 21ms[2m (next.js: 3ms, application-code: 18ms)[22m
+ GET /results [32m200[39m in 227ms[2m (next.js: 205ms, application-code: 22ms)[22m
+ GET /results [32m200[39m in 19ms[2m (next.js: 3ms, application-code: 16ms)[22m
+ GET /roadmap?id=93 [32m200[39m in 57ms[2m (next.js: 36ms, application-code: 21ms)[22m
+ GET /results [32m200[39m in 18ms[2m (next.js: 2ms, application-code: 16ms)[22m
+Failed to proxy http://127.0.0.1:8000/api/roadmap/generate/40 Error: socket hang up
+    at [3mignore-listed frames[23m {
+  code: [32m'ECONNRESET'[39m
+}
+Error: socket hang up
+    at [3mignore-listed frames[23m {
+  code: [32m'ECONNRESET'[39m
+}
+[36m[browser][39m Roadmap error: [31mAxiosError: Request failed with status code 500[39m
+[31m    at async generateRoadmap (app/results/page.tsx:45:19)[39m
+  [90m43 |[0m       [36mconst[0m score = r.score || [35m5[0m;
+  [90m44 |[0m       [36mconst[0m weakRatio = r.weak_topics?.length ? r.weak_topics.length /...
+[31m[1m>[0m [90m45 |[0m       [36mconst[0m res = [36mawait[0m api.generateRoadmap(user.id, {
+  [90m   |[0m                   [31m[1m^[0m
+  [90m46 |[0m         current_score: score, mastery_avg: score / [35m10[0m, mastery_std: [35m0.15[0m,
+  [90m47 |[0m         weak_ratio: weakRatio, improvement_last_week: [35m0[0m, prev_week_tim...
+  [90m48 |[0m       }); [2m(https://101ae081-90af-4c26-b760-33c6c3fad8ce-00-3jq13ypphv8o7.worf.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+ GET / [32m200[39m in 55ms[2m (next.js: 3ms, application-code: 52ms)[22m
+ GET /? [32m200[39m in 33ms[2m (next.js: 2ms, application-code: 31ms)[22m
+ GET /dashboard [32m200[39m in 22ms[2m (next.js: 2ms, application-code: 20ms)[22m
+ GET /test [32m200[39m in 20ms[2m (next.js: 3ms, application-code: 17ms)[22m
+ GET /results [32m200[39m in 17ms[2m (next.js: 2ms, application-code: 15ms)[22m
+ GET /results [32m200[39m in 22ms[2m (next.js: 3ms, application-code: 19ms)[22m
+Failed to proxy http://127.0.0.1:8000/api/roadmap/generate/6 Error: socket hang up
+    at [3mignore-listed frames[23m {
+  code: [32m'ECONNRESET'[39m
+}
+Error: socket hang up
+    at [3mignore-listed frames[23m {
+  code: [32m'ECONNRESET'[39m
+}
+[36m[browser][39m Roadmap error: [31mAxiosError: Request failed with status code 500[39m
+[31m    at async generateRoadmap (app/results/page.tsx:45:19)[39m
+  [90m43 |[0m       [36mconst[0m score = r.score || [35m5[0m;
+  [90m44 |[0m       [36mconst[0m weakRatio = r.weak_topics?.length ? r.weak_topics.length /...
+[31m[1m>[0m [90m45 |[0m       [36mconst[0m res = [36mawait[0m api.generateRoadmap(user.id, {
+  [90m   |[0m                   [31m[1m^[0m
+  [90m46 |[0m         current_score: score, mastery_avg: score / [35m10[0m, mastery_std: [35m0.15[0m,
+  [90m47 |[0m         weak_ratio: weakRatio, improvement_last_week: [35m0[0m, prev_week_tim...
+  [90m48 |[0m       }); [2m(https://101ae081-90af-4c26-b760-33c6c3fad8ce-00-3jq13ypphv8o7.worf.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+ GET / [32m200[39m in 51ms[2m (next.js: 3ms, application-code: 48ms)[22m

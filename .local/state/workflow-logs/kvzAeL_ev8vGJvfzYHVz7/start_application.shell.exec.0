@@ -1,0 +1,21 @@
+
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 347ms
+
+ GET / [32m200[39m in 2.4s[2m (next.js: 2.2s, application-code: 208ms)[22m
+ GET / [32m200[39m in 40ms[2m (next.js: 4ms, application-code: 36ms)[22m
+ GET /onboarding/subject [32m200[39m in 522ms[2m (next.js: 492ms, application-code: 29ms)[22m
+[32m[1m✓[22m[39m Compiled in 55ms
+[33m[1m⚠[22m[39m Found a change in next.config.js. Restarting the server to apply the changes...
+[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 501ms
+
+ GET /onboarding/subject [32m200[39m in 331ms[2m (next.js: 174ms, application-code: 156ms)[22m
+ GET / [32m200[39m in 135ms[2m (next.js: 25ms, application-code: 110ms)[22m

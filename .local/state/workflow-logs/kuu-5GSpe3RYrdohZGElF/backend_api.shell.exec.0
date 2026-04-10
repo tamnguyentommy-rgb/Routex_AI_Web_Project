@@ -1,0 +1,116 @@
+[32mINFO[0m:     Will watch for changes in these directories: ['/home/runner/workspace/backend']
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     Started reloader process [[36m[1m81[0m] using [36m[1mStatReload[0m
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 Gemini API keys loaded: 10 key(s) · models: gemini-2.0-flash, gemini-2.0-flash-lite, gemini-2.5-flash
+[32mINFO[0m:     Started server process [[36m104[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     10.83.11.45:0 - "[1mPOST /api/auth/signup HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/config/40 HTTP/1.1[0m" [31m404 Not Found[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mPOST /api/config/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/tests/generate?subject=Sinh&grade=11&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/tests/generate?subject=Sinh&grade=11&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mPOST /api/config/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mPOST /api/config/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mPOST /api/config/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/dashboard/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.7.110:0 - "[1mGET /api/roadmap/latest/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.7.110:0 - "[1mGET /api/roadmap/latest/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/dashboard/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/tests/generate?subject=Sinh&grade=12&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/tests/generate?subject=Sinh&grade=12&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mPOST /api/tests/submit?user_id=40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mPOST /api/tests/submit?user_id=40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mPOST /api/roadmap/generate/40 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mPOST /api/roadmap/select/93?scenario_name=L%E1%BB%99%20tr%C3%ACnh%20B%E1%BB%A9t%20ph%C3%A1&duration_weeks=26 HTTP/1.1[0m" [32m200 OK[0m
+[BG] Generating roadmap plan for roadmap_id=93...
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[BG] Plan generated: error=all_keys_exhausted, weeks=0
+[BG] Saved plan to DB for roadmap_id=93
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.11.45:0 - "[1mGET /api/roadmap/plan/93 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mPOST /api/auth/login HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/config/6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.0.196:0 - "[1mGET /api/dashboard/6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mGET /api/roadmap/latest/6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.2.210:0 - "[1mGET /api/dashboard/6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mGET /api/roadmap/latest/6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mGET /api/tests/generate?subject=H%C3%B3a&grade=11&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mGET /api/tests/generate?subject=H%C3%B3a&grade=11&limit=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.9.53:0 - "[1mPOST /api/tests/submit?user_id=6 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     10.83.0.196:0 - "[1mPOST /api/tests/submit?user_id=6 HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING[0m:  StatReload detected changes in 'app/services/llm_service.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m104[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 Gemini API keys loaded: 10 key(s) · models: gemini-2.0-flash, gemini-2.0-flash-lite, gemini-2.5-flash-preview-04-17
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/roadmap.py'. Reloading...
+[32mINFO[0m:     Started server process [[36m326[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m326[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 Gemini API keys loaded: 10 key(s) · models: gemini-2.0-flash, gemini-2.0-flash-lite, gemini-2.5-flash-preview-04-17
+[32mINFO[0m:     Started server process [[36m369[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/roadmap.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m369[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 Gemini API keys loaded: 10 key(s) · models: gemini-2.0-flash, gemini-2.0-flash-lite, gemini-2.5-flash-preview-04-17
+[32mINFO[0m:     Started server process [[36m417[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/services/llm_service.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m417[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 Gemini API keys loaded: 10 key(s) · models: gemini-2.0-flash, gemini-2.0-flash-lite, gemini-2.5-flash-preview-04-17
+[32mINFO[0m:     Started server process [[36m477[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m477[0m]
+[32mINFO[0m:     Stopping reloader process [[36m[1m81[0m]
