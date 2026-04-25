@@ -1,0 +1,20 @@
+[1G[0K⠙[1G[0K
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K⠙[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 1067ms
+
+[37m[1m○[22m[39m Compiling / ...
+ GET / [32m200[39m in 5.8s[2m (next.js: 5.6s, application-code: 279ms)[22m
+ GET /health [33m404[39m in 246ms[2m (next.js: 172ms, application-code: 74ms)[22m
+ GET / [32m200[39m in 50ms[2m (next.js: 5ms, application-code: 45ms)[22m
+ GET /health [33m404[39m in 52ms[2m (next.js: 4ms, application-code: 47ms)[22m
+ GET / [32m200[39m in 50ms[2m (next.js: 3ms, application-code: 47ms)[22m
+ GET /health [33m404[39m in 51ms[2m (next.js: 5ms, application-code: 46ms)[22m
+ GET / [32m200[39m in 50ms[2m (next.js: 4ms, application-code: 46ms)[22m
+ GET /health [33m404[39m in 43ms[2m (next.js: 3ms, application-code: 40ms)[22m
+ GET / [32m200[39m in 43ms[2m (next.js: 2ms, application-code: 41ms)[22m
+ GET /health [33m404[39m in 80ms[2m (next.js: 3ms, application-code: 77ms)[22m

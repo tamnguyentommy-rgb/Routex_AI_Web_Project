@@ -1,0 +1,21 @@
+
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 345ms
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
+
+ GET / [32m200[39m in 2.9s[2m (next.js: 2.8s, application-code: 178ms)[22m
+ GET /health [33m404[39m in 305ms[2m (next.js: 260ms, application-code: 45ms)[22m
+[32m[1m✓[22m[39m Compiled in 62ms
+ GET / [32m200[39m in 40ms[2m (next.js: 5ms, application-code: 35ms)[22m
+ GET /health [33m404[39m in 43ms[2m (next.js: 5ms, application-code: 38ms)[22m
+ GET / [32m200[39m in 506ms[2m (next.js: 317ms, application-code: 190ms)[22m
+ GET /health [33m404[39m in 44ms[2m (next.js: 4ms, application-code: 40ms)[22m
