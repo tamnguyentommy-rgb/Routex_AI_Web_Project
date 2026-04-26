@@ -17,7 +17,12 @@ const SUBJECT_COLORS: Record<string, string> = {
   Hóa: "linear-gradient(135deg, #10b981, #06b6d4)",
   Sinh: "linear-gradient(135deg, #14b8a6, #8b5cf6)",
 };
-
+const SUBJECT_GLOW: Record<string, string> = {
+  Toán: "0 0 12px rgba(59,130,246,0.5)",
+  Lý: "0 0 12px rgba(245,158,11,0.5)",
+  Hóa: "0 0 12px rgba(16,185,129,0.5)",
+  Sinh: "0 0 12px rgba(20,184,166,0.5)",
+};
 export default function ConfigPage() {
   const router = useRouter();
   const { user, isLoaded } = useAuth();
