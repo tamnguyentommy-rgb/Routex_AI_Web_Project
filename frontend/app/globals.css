@@ -156,9 +156,9 @@ input[type="range"]::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: var(--slider-thumb-bg, linear-gradient(135deg, #3b82f6, #8b5cf6));
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(59,130,246,0.5);
+  box-shadow: var(--slider-thumb-shadow, 0 0 12px rgba(59,130,246,0.5));
   transition: transform 0.15s;
 }
 
