@@ -23,6 +23,7 @@ const SUBJECT_GLOW: Record<string, string> = {
   Hóa: "0 0 12px rgba(16,185,129,0.5)",
   Sinh: "0 0 12px rgba(20,184,166,0.5)",
 };
+
 export default function ConfigPage() {
   const router = useRouter();
   const { user, isLoaded } = useAuth();
@@ -64,6 +65,7 @@ export default function ConfigPage() {
   };
 
   const subjectGradient = SUBJECT_COLORS[subject] || SUBJECT_COLORS["Toán"];
+  const subjectThumbShadow = SUBJECT_GLOW[subject] || SUBJECT_GLOW["Toán"];
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 noise-bg relative overflow-hidden"
@@ -92,7 +94,16 @@ export default function ConfigPage() {
           </div>
         </div>
 
-        <form onSubmit={handle} className="space-y-5" style={{ opacity: visible ? 1 : 0, transition: "all 0.5s ease 0.1s" }}>
+        <form
+          onSubmit={handle}
+          className="space-y-5"
+          style={{
+            opacity: visible ? 1 : 0,
+            transition: "all 0.5s ease 0.1s",
+            ["--slider-thumb-bg" as any]: subjectGradient,
+            ["--slider-thumb-shadow" as any]: subjectThumbShadow,
+          }}
+        >
 
           {/* Grade */}
           <div className="glass rounded-2xl p-5">
