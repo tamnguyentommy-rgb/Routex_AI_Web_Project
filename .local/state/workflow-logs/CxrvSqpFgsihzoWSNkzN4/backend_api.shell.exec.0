@@ -1,0 +1,378 @@
+[32mINFO[0m:     Will watch for changes in these directories: ['/home/runner/workspace/backend']
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     Started reloader process [[36m[1m64[0m] using [36m[1mStatReload[0m
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m101[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/tests.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m101[0m]
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/chat.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m964[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m964[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m1007[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/services/llm_service.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m1007[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m1025[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/tests.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m1025[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2151[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/chat.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2151[0m]
+[33mWARNING[0m:  StatReload detected changes in 'app/services/llm_service.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m3407[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/services/llm_service.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m3407[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m3475[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/main.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m3475[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m4236[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/main.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m4236[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m4285[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     127.0.0.1:56132 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING[0m:  Invalid HTTP request received.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/tests.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m4285[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m4747[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     127.0.0.1:40724 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:48690 - "[1mPOST /api/admin/scrape?subject=H%C3%B3a&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42244 - "[1mGET /api/tests/generate_mini?subject=To%C3%A1n&grade=10&topic=M%E1%BB%87nh+%C4%91%E1%BB%81&user_id=1&limit=5 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42290 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37748 - "[1mPOST /api/admin/scrape?subject=H%C3%B3a&grade=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56648 - "[1mPOST /api/admin/scrape?subject=H%C3%B3a&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56650 - "[1mPOST /api/admin/scrape?subject=Sinh&grade=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56658 - "[1mPOST /api/admin/scrape?subject=Sinh&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56672 - "[1mPOST /api/admin/scrape?subject=L%C3%BD&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56680 - "[1mPOST /api/admin/scrape?subject=L%C3%BD&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44104 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54808 - "[1mPOST /api/admin/scrape?subject=H%C3%B3a&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54810 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35554 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53954 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45062 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35958 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46106 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42408 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58446 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45756 - "[1mPOST /api/admin/scrape?subject=Sinh&grade=10 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45770 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:51078 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59474 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33628 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37836 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39092 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55098 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57368 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46196 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46198 - "[1mPOST /api/admin/scrape?subject=Sinh&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46212 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53070 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55164 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52652 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:43956 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:48686 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:49228 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42784 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52156 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52160 - "[1mPOST /api/admin/scrape?subject=L%C3%BD&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52170 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39044 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53692 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:34032 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52416 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:49676 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33212 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47644 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37366 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54646 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:35584 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50738 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:49688 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56402 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52804 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56240 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56246 - "[1mPOST /api/admin/scrape?subject=L%C3%BD&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56262 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39740 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:34998 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53020 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54350 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:49942 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50922 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:32824 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37654 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46502 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:52592 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46046 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57696 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:43410 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42050 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44856 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45482 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:43330 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50428 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:38834 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:60490 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50122 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59216 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47046 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47062 - "[1mGET /api/tests/generate_mini?subject=L%C3%BD&grade=10&topic=Dao+%C4%91%E1%BB%99ng+c%C6%A1&user_id=1&limit=5 HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING[0m:  StatReload detected changes in 'app/services/scraper.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m4747[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m6388[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     127.0.0.1:42782 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=11 HTTP/1.1[0m" [32m200 OK[0m
+HTTP 404 for https://vietjack.com/toan-11-kn/trac-nghiem-toan-lop-11-ket-noi.jsp
+[32mINFO[0m:     127.0.0.1:46810 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40708 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44976 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47000 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41510 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41522 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:60954 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:60962 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54810 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42802 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42814 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56754 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41968 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37188 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:48876 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40646 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40650 - "[1mPOST /api/admin/scrape?subject=Sinh&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40660 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55756 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:34048 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45482 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53988 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:51436 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53994 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55016 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:37832 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50328 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:49780 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57788 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:48472 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41660 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41606 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:43356 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:38800 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:46536 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42572 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:41100 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:60042 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59100 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:51534 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45274 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:54294 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:34736 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42070 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42414 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33198 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:38038 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44588 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:53986 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44036 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44046 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:60046 - "[1mPOST /api/admin/scrape?subject=To%C3%A1n&grade=12 HTTP/1.1[0m" [32m200 OK[0m
+HTTP 404 for https://vietjack.com/toan-lop-12/trac-nghiem-toan-12.jsp
+[32mINFO[0m:     127.0.0.1:60050 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47528 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:33560 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44042 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:47104 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42654 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:38818 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:48416 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40384 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:59590 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:57760 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:50232 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:39348 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:44048 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45510 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:45934 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:42404 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:55530 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:43194 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:40250 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56070 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:58592 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56530 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:56540 - "[1mGET /api/admin/scrape/status HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING[0m:  StatReload detected changes in 'app/services/scraper.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m6388[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m7990[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/db/session.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m7990[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m10980[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'migrate_add_last_reviewed.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m10980[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m10998[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m10998[0m]
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq_bulk.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11043[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11043[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11061[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11061[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11104[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11104[0m]
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq_bulk.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11122[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11122[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11140[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq_bulk.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11140[0m]
+[33mWARNING[0m:  StatReload detected changes in 'generate_mcq_bulk.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11158[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11158[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m11176[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m11176[0m]
+[32mINFO[0m:     Stopping reloader process [[36m[1m64[0m]

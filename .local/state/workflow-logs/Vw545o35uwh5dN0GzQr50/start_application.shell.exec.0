@@ -1,0 +1,376 @@
+
+> frontend@0.1.0 dev
+> next dev -p 5000 -H 0.0.0.0
+
+[1G[0K[1m[38;2;173;127;168m▲ Next.js 16.2.1[39m[22m (Turbopack)
+- Local:         http://localhost:5000
+- Network:       http://0.0.0.0:5000
+[32m[1m✓[22m[39m Ready in 357ms
+
+ GET /onboarding/subject [32m200[39m in 1073ms[2m (next.js: 892ms, application-code: 182ms)[22m
+ GET / [32m200[39m in 980ms[2m (next.js: 717ms, application-code: 263ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+ GET /health [33m404[39m in 60ms[2m (next.js: 23ms, application-code: 37ms)[22m
+[32m[1m✓[22m[39m Compiled in 2.9s
+[32m[1m✓[22m[39m Compiled in 569ms
+ GET / [32m200[39m in 50ms[2m (next.js: 7ms, application-code: 43ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /health [33m404[39m in 48ms[2m (next.js: 5ms, application-code: 42ms)[22m
+ GET / [32m200[39m in 65ms[2m (next.js: 10ms, application-code: 55ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /health [33m404[39m in 46ms[2m (next.js: 5ms, application-code: 41ms)[22m
+[32m[1m✓[22m[39m Compiled in 579ms
+[32m[1m✓[22m[39m Compiled in 815ms
+[32m[1m✓[22m[39m Compiled in 54ms
+ GET /dashboard [32m200[39m in 3.0s[2m (next.js: 2.9s, application-code: 91ms)[22m
+ GET / [32m200[39m in 28ms[2m (next.js: 8ms, application-code: 19ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /health [33m404[39m in 105ms[2m (next.js: 4ms, application-code: 101ms)[22m
+ GET /health [33m404[39m in 60ms[2m (next.js: 7ms, application-code: 53ms)[22m
+ GET /onboarding/subject [32m200[39m in 121ms[2m (next.js: 91ms, application-code: 30ms)[22m
+ GET /onboarding/config [32m200[39m in 1320ms[2m (next.js: 1286ms, application-code: 34ms)[22m
+ GET /dashboard [32m200[39m in 26ms[2m (next.js: 3ms, application-code: 23ms)[22m
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useEffect                 useEffect
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. undefined                 useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+ GET /dashboard? [32m200[39m in 43ms[2m (next.js: 3ms, application-code: 41ms)[22m
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useEffect                 useEffect
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. undefined                 useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard [32m200[39m in 57ms[2m (next.js: 4ms, application-code: 52ms)[22m
+[32m[1m✓[22m[39m Compiled in 1125ms
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useEffect                 useEffect
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. undefined                 useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:356:33)[39m
+  [90m354 |[0m
+  [90m355 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m356 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m357 |[0m   useEffect(() => {
+  [90m358 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m359 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+[32m[1m✓[22m[39m Compiled in 48ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard [32m200[39m in 45ms[2m (next.js: 5ms, application-code: 41ms)[22m
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useEffect                 useEffect
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. undefined                 useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:368:33)[39m
+  [90m366 |[0m
+  [90m367 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m368 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m369 |[0m   useEffect(() => {
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:368:33)[39m
+  [90m366 |[0m
+  [90m367 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m368 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m369 |[0m   useEffect(() => {
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+[32m[1m✓[22m[39m Compiled in 28ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard [32m200[39m in 42ms[2m (next.js: 4ms, application-code: 38ms)[22m
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useEffect                 useEffect
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. undefined                 useRef
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:368:33)[39m
+  [90m366 |[0m
+  [90m367 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m368 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m369 |[0m   useEffect(() => {
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:368:33)[39m
+  [90m366 |[0m
+  [90m367 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m368 |[0m   [36mconst[0m mascotMsgCtxRef = useRef([36mfalse[0m);
+  [90m    |[0m                                 [31m[1m^[0m
+  [90m369 |[0m   useEffect(() => {
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+[Server HMR] Update failed, full reload needed: SyntaxError: Identifier 'mascotMsgCtxRef' has already been declared
+    at eval (<anonymous>)
+[Server HMR] Listener error: SyntaxError: Identifier 'mascotMsgCtxRef' has already been declared
+    at eval (<anonymous>)
+[32m[1m✓[22m[39m Compiled in 44ms
+ GET /dashboard [32m200[39m in 589ms[2m (next.js: 327ms, application-code: 262ms)[22m
+ GET / [32m200[39m in 48ms[2m (next.js: 25ms, application-code: 22ms)[22m
+ GET /health [33m404[39m in 129ms[2m (next.js: 23ms, application-code: 106ms)[22m
+ GET /health [33m404[39m in 42ms[2m (next.js: 3ms, application-code: 39ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /dashboard [32m200[39m in 43ms[2m (next.js: 4ms, application-code: 39ms)[22m
+ GET / [32m200[39m in 21ms[2m (next.js: 3ms, application-code: 19ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /health [33m404[39m in 88ms[2m (next.js: 3ms, application-code: 85ms)[22m
+ GET /health [33m404[39m in 51ms[2m (next.js: 5ms, application-code: 46ms)[22m
+ GET /past-papers [32m200[39m in 2.9s[2m (next.js: 2.8s, application-code: 172ms)[22m
+ GET / [32m200[39m in 39ms[2m (next.js: 20ms, application-code: 18ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m
+ GET /health [33m404[39m in 107ms[2m (next.js: 27ms, application-code: 80ms)[22m
+ GET /health [33m404[39m in 39ms[2m (next.js: 8ms, application-code: 31ms)[22m
+ GET / [32m200[39m in 551ms[2m (next.js: 290ms, application-code: 261ms)[22m
+[36m[browser][39m [33mImage with src "/brand/mio-midoru.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.[39m [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+ GET /health [33m404[39m in 101ms[2m (next.js: 65ms, application-code: 36ms)[22m
+ GET /onboarding/subject [32m200[39m in 85ms[2m (next.js: 63ms, application-code: 23ms)[22m
+ GET /onboarding/config [32m200[39m in 136ms[2m (next.js: 115ms, application-code: 21ms)[22m
+[37m[1m○[22m[39m Compiling /onboarding/exam-date ...
+ GET /onboarding/exam-date [32m200[39m in 3.5s[2m (next.js: 3.4s, application-code: 21ms)[22m
+ GET /test [32m200[39m in 615ms[2m (next.js: 595ms, application-code: 20ms)[22m
+ GET /results [32m200[39m in 2.3s[2m (next.js: 2.3s, application-code: 26ms)[22m
+ GET /roadmap?id=96 [32m200[39m in 454ms[2m (next.js: 410ms, application-code: 44ms)[22m
+ GET /dashboard [32m200[39m in 223ms[2m (next.js: 193ms, application-code: 30ms)[22m
+[36m[browser][39m React has detected a change in the order of Hooks called by DashboardPage. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+1. useContext                 useContext
+2. useContext                 useContext
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useRef                    useRef
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useRef                    useRef
+20. useEffect                 useEffect
+21. useEffect                 useEffect
+22. useEffect                 useEffect
+23. useEffect                 useEffect
+24. undefined                 useEffect
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+[31m    at Proxy.<anonymous> (https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)
+    at DashboardPage (app/dashboard/page.tsx:369:12)[39m
+  [90m367 |[0m
+  [90m368 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m369 |[0m   useEffect(() => {
+  [90m    |[0m            [31m[1m^[0m
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+  [90m372 |[0m     mascotMsgCtxRef.current = [36mtrue[0m; [2m(https://c90164be-5316-4c82-be18-5e716ecd7853-00-ej3r7fjccc0z.sisko.replit.dev:5000/__replco/static/devtools/injected.js:37:27)[22m
+[36m[browser][39m [31mUncaught Error: Rendered more hooks than during the previous render.[39m
+[31m    at DashboardPage (app/dashboard/page.tsx:369:12)[39m
+  [90m367 |[0m
+  [90m368 |[0m   [90m// Load mascot message once context is ready[0m
+[31m[1m>[0m [90m369 |[0m   useEffect(() => {
+  [90m    |[0m            [31m[1m^[0m
+  [90m370 |[0m     [36mif[0m (mascotMsgCtxRef.current) [36mreturn[0m;
+  [90m371 |[0m     [36mif[0m (!dash || !user) [36mreturn[0m;
+  [90m372 |[0m     mascotMsgCtxRef.current = [36mtrue[0m;
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+[32m[1m✓[22m[39m Compiled in 0ms
+ GET /dashboard [32m200[39m in 268ms[2m (next.js: 7ms, application-code: 260ms)[22m
+[32m[1m✓[22m[39m Compiled in 398ms
+[33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard [32m200[39m in 56ms[2m (next.js: 5ms, application-code: 51ms)[22m
+ GET /past-papers [32m200[39m in 60ms[2m (next.js: 39ms, application-code: 21ms)[22m
+ GET /dashboard [32m200[39m in 61ms[2m (next.js: 8ms, application-code: 53ms)[22m
+ GET /test [32m200[39m in 352ms[2m (next.js: 262ms, application-code: 90ms)[22m
+ GET /results [32m200[39m in 8.3s[2m (next.js: 4.5s, application-code: 3.8s)[22m
+[37m[1m○[22m[39m Compiling /theory ...
+ GET /theory [32m200[39m in 3.9s[2m (next.js: 3.7s, application-code: 154ms)[22m
+ GET /test [32m200[39m in 212ms[2m (next.js: 57ms, application-code: 155ms)[22m
+ GET /results [32m200[39m in 31ms[2m (next.js: 4ms, application-code: 27ms)[22m
+ GET /dashboard [32m200[39m in 25ms[2m (next.js: 5ms, application-code: 20ms)[22m
+ GET /past-papers [32m200[39m in 28ms[2m (next.js: 6ms, application-code: 22ms)[22m
+ GET /dashboard [32m200[39m in 23ms[2m (next.js: 4ms, application-code: 19ms)[22m
+[32m[1m✓[22m[39m Compiled in 1186ms
+[32m[1m✓[22m[39m Compiled in 80ms
+[32m[1m✓[22m[39m Compiled in 65ms
