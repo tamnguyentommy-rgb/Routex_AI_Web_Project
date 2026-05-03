@@ -36,6 +36,13 @@ interface DashData {
   };
   due_reviews?: DueReview[];
   due_reviews_count?: number;
+  roadmap?: {
+    roadmap_plan?: {
+      weeks?: any[];
+      [key: string]: any;
+    };
+    [key: string]: any;
+  };
 }
 
 const SUBJECT_LABEL: Record<string, string> = {
