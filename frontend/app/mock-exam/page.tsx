@@ -271,7 +271,7 @@ export default function MockExamPage() {
       if (s >= 5) return { label: "Trung bình", color: "#fbbf24" };
       return { label: "Cần cố gắng", color: "#f87171" };
     };
-    const grade = getGrade(thptScore);
+    const gradeLabel = getGrade(thptScore);
 
     const topicBreakdown: Record<string, { correct: number; total: number }> = {};
     (results.results || []).forEach((r: any) => {
@@ -304,8 +304,8 @@ export default function MockExamPage() {
               {thptScore.toFixed(1)}
             </p>
             <p className="text-sm mb-2" style={{ color: "var(--text-muted)" }}>/ 10 điểm</p>
-            <span className="text-sm font-black px-4 py-1.5 rounded-full" style={{ background: `${grade.color}22`, color: grade.color }}>
-              {grade.label}
+            <span className="text-sm font-black px-4 py-1.5 rounded-full" style={{ background: `${gradeLabel.color}22`, color: gradeLabel.color }}>
+              {gradeLabel.label}
             </span>
             <div className="flex justify-center gap-6 mt-5">
               <div className="text-center">
