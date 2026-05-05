@@ -1,0 +1,103 @@
+[32mINFO[0m:     Will watch for changes in these directories: ['/home/runner/workspace/backend']
+[32mINFO[0m:     Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     Started reloader process [[36m[1m1189[0m] using [36m[1mStatReload[0m
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m1201[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/models/progress.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m1201[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[33mWARNING[0m:  StatReload detected changes in 'app/main.py'. Reloading...
+[32mINFO[0m:     Started server process [[36m2167[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2167[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2213[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/main.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2213[0m]
+[33mWARNING[0m:  StatReload detected changes in 'app/main.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2287[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2287[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2329[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/tests.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2329[0m]
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/dashboard.py'. Reloading...
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2347[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2347[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2389[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/tests.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2389[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2407[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/dashboard.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2407[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2449[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[33mWARNING[0m:  StatReload detected changes in 'app/api/endpoints/dashboard.py'. Reloading...
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2449[0m]
+✅ Đã load XGBoost Model vào bộ nhớ thành công!
+🔑 LLM providers loaded — Gemini: 1 key(s) · Groq: 1 key(s) · OpenAI: 1 key(s)
+[32mINFO[0m:     Started server process [[36m2492[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m2492[0m]
+[32mINFO[0m:     Stopping reloader process [[36m[1m1189[0m]
