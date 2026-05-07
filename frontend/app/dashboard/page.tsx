@@ -461,7 +461,7 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen pb-28 noise-bg relative overflow-x-hidden" style={{ background: "#07080f" }}>
+    <div className="min-h-screen pb-28 lg:pb-10 noise-bg relative overflow-x-hidden" style={{ background: "#07080f" }}>
 
       {/* Aurora background orbs */}
       <div className="aurora-orb fixed pointer-events-none" style={{ width: 600, height: 600, top: -240, right: -200, background: "radial-gradient(circle, " + subjectAuroraColor + ", transparent 70%)", zIndex: 0 }} />
@@ -469,7 +469,7 @@ export default function DashboardPage() {
       <div className="aurora-orb fixed pointer-events-none" style={{ width: 360, height: 360, top: "45%", left: "30%", background: "radial-gradient(circle, rgba(139,92,246,0.06), transparent 70%)", zIndex: 0, animationDelay: "6s" }} />
 
       <div className="relative z-10">
-      <div className="max-w-md mx-auto px-4 pt-7">
+      <div className="max-w-6xl mx-auto px-4 pt-7">
 
         {/* Header */}
         <div className="flex items-center justify-between mb-7" style={cardStyle(0)}>
@@ -496,6 +496,112 @@ export default function DashboardPage() {
             </button>
           </div>
         </div>
+
+        {/* ── Desktop 3-column layout ── */}
+        <div className="lg:flex lg:gap-5 lg:items-start">
+
+        {/* LEFT SIDEBAR — desktop only */}
+        <div className="hidden lg:flex flex-col gap-4 w-60 flex-shrink-0 sticky top-6 self-start">
+          {/* Subject + progress */}
+          <div className="rounded-2xl p-4 relative overflow-hidden" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+            <div className="absolute top-0 left-0 right-0 h-0.5 rounded-t-2xl" style={{ background: subjectGradient }} />
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-xl text-white font-black mb-3" style={{ background: subjectGradient }}>
+              {subjectIcon}
+            </div>
+            <p className="text-white font-black text-lg leading-none">{cfg?.subject || "—"}</p>
+            <p className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>{subjectLabel} · Lớp {cfg?.grade}</p>
+            <div className="mt-3 flex items-center gap-2">
+              <div className="h-1.5 flex-1 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
+                <div className="h-full rounded-full" style={{ width: `${progress}%`, background: subjectGradient }} />
+              </div>
+              <span className="text-xs font-black text-white">{progress}%</span>
+            </div>
+            <p className="text-[10px] mt-1" style={{ color: "var(--text-muted)" }}>Tổng tiến độ</p>
+          </div>
+
+          {/* Streak */}
+          {dash?.study_streak && (
+            <div className="rounded-2xl p-4" style={{ background: "rgba(245,158,11,0.07)", border: "1px solid rgba(245,158,11,0.18)" }}>
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>🔥 Streak</span>
+                {dash.study_streak.studied_today && (
+                  <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ background: "rgba(52,211,153,0.15)", color: "#34d399" }}>✓ Hôm nay</span>
+                )}
+              </div>
+              <p className="text-white font-black text-3xl leading-none">
+                {dash.study_streak.current}
+                <span className="text-sm font-medium ml-1" style={{ color: "var(--text-muted)" }}>ngày</span>
+              </p>
+              <p className="text-[10px] mt-1" style={{ color: "var(--text-muted)" }}>Kỷ lục: {dash.study_streak.longest} ngày</p>
+              {(dash.study_streak.earned_milestones?.length || 0) > 0 && (
+                <div className="flex flex-wrap gap-1 mt-2">
+                  {dash.study_streak.earned_milestones.slice(-3).map(m => (
+                    <span key={m} className="text-[9px] px-1.5 py-0.5 rounded-full font-bold" style={{ background: "rgba(245,158,11,0.12)", color: "#fbbf24" }}>🏅 {m}d</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Stats overview */}
+          <div className="rounded-2xl p-4 space-y-2.5" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+            <p className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--text-muted)" }}>Thống kê học tập</p>
+            {[
+              { label: "Điểm gần nhất", value: `${lastScore}%`, color: subjectGradient },
+              { label: "Chủ đề mạnh", value: `${strongCount}/${totalTopics}`, color: "linear-gradient(135deg,#10b981,#06b6d4)" },
+              { label: "Cần cải thiện", value: `${weakCount}`, color: "linear-gradient(135deg,#ef4444,#f97316)" },
+              { label: "Giờ học tích lũy", value: `${totalStudyTime}p`, color: "linear-gradient(135deg,#f59e0b,#f97316)" },
+            ].map(s => (
+              <div key={s.label} className="flex items-center justify-between">
+                <span className="text-xs" style={{ color: "var(--text-muted)" }}>{s.label}</span>
+                <span className="text-xs font-black" style={{ background: s.color, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", display: "inline-block" }}>{s.value}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Config info */}
+          {cfg && (
+            <div className="rounded-2xl p-4 space-y-2" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+              <p className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--text-muted)" }}>Cấu hình</p>
+              {[
+                { label: "Chế độ", value: cfg.mode === "exam" ? "Chuẩn bị Thi" : "Toàn Diện" },
+                { label: "Điểm mục tiêu", value: `${cfg.target_score}/10` },
+                { label: "Thời gian/ngày", value: `${cfg.daily_study_time} phút` },
+                ...(timeLeft && !timeLeft.expired ? [{ label: "Còn lại", value: `${timeLeft.days} ngày` }] : []),
+              ].map(r => (
+                <div key={r.label} className="flex items-center justify-between">
+                  <span className="text-xs" style={{ color: "var(--text-muted)" }}>{r.label}</span>
+                  <span className="text-xs font-bold text-white">{r.value}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Quick actions */}
+          <div className="rounded-2xl p-4 space-y-2" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+            <p className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--text-muted)" }}>Thao tác nhanh</p>
+            <button onClick={() => goToTopicTest(focusedTopicName || undefined, currentWeek?.week)}
+              className="w-full py-2 rounded-xl text-xs font-black text-white transition-all active:scale-95"
+              style={{ background: subjectGradient }}>
+              Mini Test ngay →
+            </button>
+            {hasValidRoadmap && (
+              <button onClick={() => router.push(`/roadmap?id=${latestRoadmap.roadmap_id}`)}
+                className="w-full py-2 rounded-xl text-xs font-bold transition-all active:scale-95"
+                style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", color: "var(--text-secondary)" }}>
+                Xem lộ trình →
+              </button>
+            )}
+            <button onClick={() => router.push("/mock-exam")}
+              className="w-full py-2 rounded-xl text-xs font-bold transition-all active:scale-95"
+              style={{ background: "rgba(245,158,11,0.10)", border: "1px solid rgba(245,158,11,0.2)", color: "#fbbf24" }}>
+              Thi thử THPT
+            </button>
+          </div>
+        </div>
+
+        {/* CENTER COLUMN */}
+        <div className="flex-1 min-w-0">
 
         {activeTab === "profile" ? (
           /* ===== PROFILE / MASCOT TAB ===== */
@@ -1282,6 +1388,119 @@ export default function DashboardPage() {
           </>
         )}
 
+        </div>{/* center column */}
+
+        {/* RIGHT SIDEBAR — desktop only */}
+        <div className="hidden lg:flex flex-col gap-4 w-60 flex-shrink-0 sticky top-6 self-start">
+
+          {/* Weak topics */}
+          {!!dash?.weak_topics?.length && (
+            <div className="rounded-2xl p-4" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>◈ Cần tập trung</p>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-full" style={{ background: "rgba(239,68,68,0.15)", color: "#f87171" }}>{dash.weak_topics.length} chủ đề</span>
+              </div>
+              <div className="space-y-2.5">
+                {dash.weak_topics.slice(0, 5).map((t: any) => (
+                  <div key={t.topic} className="space-y-1">
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs truncate flex-1 pr-2" style={{ color: "var(--text-secondary)" }}>{t.topic}</p>
+                      <span className="text-[10px] font-black flex-shrink-0" style={{ color: "#f87171" }}>{t.mastery}%</span>
+                    </div>
+                    <div className="h-1 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
+                      <div className="h-full rounded-full" style={{ width: `${t.mastery}%`, background: "linear-gradient(90deg,#ef4444,#f97316)" }} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {!!dash?.chronic_weak_topics?.length && (
+                <div className="mt-3 px-2.5 py-2 rounded-xl" style={{ background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.18)" }}>
+                  <p className="text-[9px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "#f87171" }}>Lặp lại yếu</p>
+                  <p className="text-[10px]" style={{ color: "#fca5a5" }}>{dash.chronic_weak_topics.slice(0, 2).join(", ")}</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Due reviews */}
+          {(dash?.due_reviews_count ?? 0) > 0 && (
+            <div className="rounded-2xl p-4" style={{ background: "rgba(16,185,129,0.07)", border: "1px solid rgba(16,185,129,0.18)" }}>
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--text-muted)" }}>◈ Ôn tập SM-2</p>
+                <span className="text-[9px] font-black px-1.5 py-0.5 rounded-full" style={{ background: "rgba(16,185,129,0.2)", color: "#34d399" }}>{dash!.due_reviews_count}</span>
+              </div>
+              <div className="space-y-2">
+                {dash?.due_reviews?.slice(0, 4).map((r, i) => (
+                  <div key={r.topic + i}
+                    className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+                    onClick={() => goToTopicTest(r.topic, undefined)}>
+                    <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: r.days_overdue > 0 ? "#f87171" : "#34d399" }} />
+                    <p className="text-xs flex-1 truncate" style={{ color: "var(--text-secondary)" }}>{r.topic}</p>
+                    <span className="text-[9px] font-bold flex-shrink-0" style={{ color: r.days_overdue > 0 ? "#f87171" : "#34d399" }}>
+                      {r.days_overdue > 0 ? `+${r.days_overdue}d` : "Hôm nay"}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <button
+                onClick={() => goToTopicTest(dash?.due_reviews?.[0]?.topic, undefined)}
+                className="w-full mt-3 py-2 rounded-xl text-xs font-black text-white transition-all active:scale-95"
+                style={{ background: "linear-gradient(135deg,#10b981,#06b6d4)" }}>
+                Ôn tập ngay →
+              </button>
+            </div>
+          )}
+
+          {/* Learning path preview */}
+          {learningPath.length > 0 && (
+            <div className="rounded-2xl p-4" style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
+              <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: "var(--text-muted)" }}>Lộ trình học</p>
+              <div className="space-y-2">
+                {learningPath.slice(0, 6).map((item: any, i: number) => (
+                  <div key={item.topic + i} className="flex items-center gap-2">
+                    <div className="w-4 h-4 rounded flex items-center justify-center flex-shrink-0 text-[8px] font-black"
+                      style={item.status === "completed"
+                        ? { background: "rgba(16,185,129,0.15)", color: "#34d399" }
+                        : item.status === "in_progress"
+                        ? { background: subjectGradient, color: "#fff" }
+                        : { background: "rgba(255,255,255,0.05)", color: "var(--text-muted)" }}>
+                      {item.status === "completed" ? "✓" : item.status === "in_progress" ? "▶" : "○"}
+                    </div>
+                    <p className="text-xs flex-1 truncate"
+                      style={{ color: item.status === "in_progress" ? "#fff" : item.status === "completed" ? "var(--text-muted)" : "var(--text-secondary)" }}>
+                      {item.topic}
+                    </p>
+                    {item.status === "in_progress" && (
+                      <div className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse flex-shrink-0" />
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Weekly progress mini */}
+          {(dash?.weekly_progress?.length || 0) > 0 && (
+            <div className="rounded-2xl p-4" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+              <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: "var(--text-muted)" }}>Điểm tuần gần nhất</p>
+              <div className="space-y-1.5">
+                {dash!.weekly_progress.slice(-4).reverse().map((w: any, i: number) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <span className="text-[10px] w-10 flex-shrink-0" style={{ color: "var(--text-muted)" }}>Tuần {w.week}</span>
+                    <div className="flex-1 h-1 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
+                      <div className="h-full rounded-full" style={{ width: `${Math.min(w.score * 10, 100)}%`, background: subjectGradient }} />
+                    </div>
+                    <span className="text-[10px] font-bold w-5 text-right flex-shrink-0 text-white">{w.score}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+        </div>{/* right sidebar */}
+
+        </div>{/* lg:flex 3-col close */}
+
       </div>
       </div>
 
@@ -1377,8 +1596,8 @@ export default function DashboardPage() {
         </div>
       )}
 
-      {/* Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 z-40"
+      {/* Bottom Navigation — mobile only */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40"
         style={{
           background: "rgba(7,8,15,0.92)",
           backdropFilter: "blur(28px)",
