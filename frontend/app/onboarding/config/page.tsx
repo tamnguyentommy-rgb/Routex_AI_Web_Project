@@ -64,21 +64,27 @@ export default function ConfigPage() {
   const targetLabel = target >= 9.5 ? "Xuất sắc" : target >= 8.5 ? "Giỏi" : target >= 7.0 ? "Khá" : "Trung bình khá";
   const dailyLabel = daily >= 120 ? "Cường độ cao" : daily >= 75 ? "Vừa phải" : "Nhẹ nhàng";
 
+  const gradientTextStyle: React.CSSProperties = {
+    backgroundImage: meta.gradient,
+    backgroundClip: "text",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    color: "transparent",
+    display: "inline-block",
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4 noise-bg relative overflow-hidden"
       style={{ background: "#07080f" }}>
 
-      {/* Aurora */}
       <div className="aurora-orb" style={{ width: 480, height: 480, top: -180, right: -160, background: `radial-gradient(circle, ${meta.orb}, transparent 70%)` }} />
       <div className="aurora-orb aurora-orb-2" style={{ width: 360, height: 360, bottom: -140, left: -120, background: "radial-gradient(circle, rgba(99,102,241,0.10), transparent 70%)" }} />
 
-      {/* Top gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px opacity-70 pointer-events-none"
         style={{ background: meta.gradient }} />
 
       <div className="relative z-10 w-full max-w-lg">
 
-        {/* Header */}
         <div className="text-center mb-8"
           style={{ opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(20px)", transition: "all 0.55s cubic-bezier(0.4,0,0.2,1)" }}>
 
@@ -110,7 +116,6 @@ export default function ConfigPage() {
             ["--slider-thumb-shadow" as any]: `0 0 16px ${meta.glow}`,
           }}>
 
-          {/* Grade */}
           <div className="glass-premium rounded-2xl p-5">
             <label className="block text-[10px] font-black uppercase tracking-widest mb-4" style={{ color: "var(--text-muted)" }}>Lớp học</label>
             <div className="grid grid-cols-3 gap-3">
@@ -126,7 +131,6 @@ export default function ConfigPage() {
             </div>
           </div>
 
-          {/* Mode */}
           <div className="glass-premium rounded-2xl p-5">
             <label className="block text-[10px] font-black uppercase tracking-widest mb-4" style={{ color: "var(--text-muted)" }}>Mục tiêu học tập</label>
             <div className="space-y-3">
@@ -157,12 +161,11 @@ export default function ConfigPage() {
             </div>
           </div>
 
-          {/* Target score */}
           <div className="glass-premium rounded-2xl p-5">
             <div className="flex items-center justify-between mb-1">
               <label className="text-[10px] font-black uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>Điểm mục tiêu</label>
               <div className="flex items-baseline gap-1.5">
-                <span className="text-3xl font-black" style={{ background: meta.gradient, backgroundClip: "text", WebkitBackgroundClip: "text", color: "transparent", WebkitTextFillColor: "transparent" }}>
+                <span className="text-3xl font-black" style={gradientTextStyle}>
                   {target.toFixed(1)}
                 </span>
                 <span className="text-xs font-bold" style={{ color: "var(--text-muted)" }}>{targetLabel}</span>
@@ -174,12 +177,11 @@ export default function ConfigPage() {
             </div>
           </div>
 
-          {/* Daily time */}
           <div className="glass-premium rounded-2xl p-5">
             <div className="flex items-center justify-between mb-1">
               <label className="text-[10px] font-black uppercase tracking-widest" style={{ color: "var(--text-muted)" }}>Thời gian học/ngày</label>
               <div className="flex items-baseline gap-1.5">
-                <span className="text-3xl font-black" style={{ background: meta.gradient, backgroundClip: "text", WebkitBackgroundClip: "text", color: "transparent", WebkitTextFillColor: "transparent" }}>
+                <span className="text-3xl font-black" style={gradientTextStyle}>
                   {daily}
                 </span>
                 <span className="text-xs font-bold" style={{ color: "var(--text-muted)" }}>phút · {dailyLabel}</span>
@@ -209,7 +211,6 @@ export default function ConfigPage() {
               : mode === "exam" ? "Tiếp theo →" : "Vào Dashboard →"}
           </button>
 
-          {/* Step dots */}
           <div className="flex justify-center gap-2.5 pt-1">
             <span className="h-1.5 w-5 rounded-full" style={{ background: "rgba(255,255,255,0.14)" }} />
             <span className="h-1.5 w-12 rounded-full" style={{ background: meta.gradient, boxShadow: `0 0 8px ${meta.glow}` }} />
